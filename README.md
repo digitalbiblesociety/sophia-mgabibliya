@@ -2,7 +2,7 @@
 
 ### Description
 
-inScript is a instance of Sophia, a Bible Study web app, customized specifically for a Arabic Audience.
+inScript is a instance of Sophia, a Bible Study web app, customized specifically for a Filipino Audience.
 
 ### About The Team
 
