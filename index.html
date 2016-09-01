@@ -13,24 +13,25 @@
 	<script src="build/tl.js"></script>
 	<script>
 		sofia.config = $.extend(sofia.config, {
-			settingsPrefix: '20160425',
-			// first load
+			siteTitle: 'Mga Bibliya',
 			windows: [
 				{type: 'bible', data: {textid: 'ENGKJV', fragmentid: 'JN3_16'}},
 				{type: 'bible', data: {textid: 'ENGNAS', fragmentid: 'JN3_16'}}
 			],
+			defaultLanguage: 'tl',
+			pinnedLanguage: 'tl',
+
+
+			settingsPrefix: '20160425',
 			enableBibleSelectorTabs: false,
 			textsIndexPath: 'dbs_texts.json',
 			baseContentUrl: 'http://inscript.bible.cloud/',
-			baseAPIUrl: 'http://biblecloud.dev/api/',
-			serverSearchPath: 'http://biblecloud.dev/api/bible/study/search/',
-			absUrl: 'http://biblecloud.dev/api/bible/partners/abs/',
-			bibleSelectorDefaultList: ["ARZVDV","CHNCU1","CHNNCS","CHNCUV","CHNNCT","ENGESV","ENGNAS","ENGKJV", "ENGHCS","ENGNIV","ENGNET","ENGWEB","GRCTIS","HNDWTC","HBOWLC","PORJFA","RU1IBS","SPNR60","SPNBLA"],
-			// Enables the use of online sources (Google Maps, FCBH, Jesus Film, etc.)
+			baseAPIUrl: 'http://bible.cloud/api/',
+			serverSearchPath: 'http://bible.cloud/api/bible/study/search/',
+			absUrl: 'http://bible.cloud/api/bible/partners/abs/',
 			enableOnlineSources: true,
 			enableFeedback: true,
-			feedbackUrl: 'http://biblecloud.dev/',
-
+			feedbackUrl: 'http://bible.cloud/feedback/',
 			newCommentaryWindowTextId: "comm_eng_tske",
 			fcbhKey: '111a125057abd2f8931f6d6ad9f2921f',
 			jfmKey: '52b06248a3c6e8.12980089',
@@ -56,8 +57,5 @@
 	</style>
 </head>
 <body>
-
- <script>$( document ).ready(function() {$( "#app-logo" ).wrapInner( '<a class="title" href="//bible.cloud/">Mga Bibliya</a>' ); });</script>
-
 </body>
 </html>
