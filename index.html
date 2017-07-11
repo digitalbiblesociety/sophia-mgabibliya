@@ -29,9 +29,9 @@
 <!-- Build -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>	
     <script src="https://inscript.bible.cloud/build/app-20170308.js?v=4.0.2"></script>
+	<script src="https://inscript.bible.cloud/build/config-basePaths.js"></script>
+	<script src="https://inscript.bible.cloud/build/config-baseSettings.js"></script>
     <link rel="stylesheet" href="https://inscript.bible.cloud/build/app-20170308.css?v=4.0.2" />
-    
-
 	<script src="build/tl.js"></script>
 	<script>
 		sofia.config = $.extend(sofia.config, {
@@ -40,37 +40,13 @@
 			defaultLanguage: 'tl',
 			pinnedLanguage: 'tl',
 
-
     		windows: [
     		    {type: 'bible',data: {textid: 'TGLTAB',fragmentid: 'JN1_1'}},
     		    {type: 'bible',data: {textid: 'TGLAB1',fragmentid: 'JN1_1'}},
     		    {type: 'search', data: {textid: 'TGLAB1', searchtext:'Sumainyo nawa ang at kapayapaang'}}
 			],
-			topTexts: ['TGLMBP','TGLMBB','TGLAB1','TGLAB8','TGLFSV','CEBMBP','CEBMBC','CEBAB1','ILOMBB','ILOMBC','ILOAB3','HILAB2','HILMBB','HILMBC','BCLMBB','BCLMBC','PAMMBC','PAGMBB','PAGMBC','WARMBB','WARMBC','WARAB4'],
-			bibleSelectorDefaultList: ['ABXWBT','AGNWPS','AGTWBT','ALJOMF','ATDWBT','ATTWBT','BCLBPV','BCLMBB','BCLMBC','BGSWBT','BKDWBT','BKUOMF','BLWWBT','BNJOMF','BPRWBT','BPRWYI','BPSWBT','BPSWPS','CBKWBT','CEBAB1','CEBCBV','CEBMBC','CEBMBP','CEBPVV','CEBRPV','CGCTBL','CGCWBT','CLUWBT','DGCWBT','EBKWBT','HILAB2','HILHPV','HILMBB','HILMBC','HNNOMF','IFBTBL','IFKTBL','IFUWPS','IFYWBT','ILOAB3','ILOMBB','ILOMBC','ILORPV','IRYOMF','ITVSTP','KMKWBT','KNETBL','KQETBL','KRJWBT','LBKWBT','MBBWPS','MBSWBT','MBTWBT','MRWNVS','MSBWBT','MSKWBT','MSMWPS','MTATBL','OBOWBT','PAGMBB','PAGMBC','PAGPBS','PAMMBC','PAMPBS','PLWWBT','PRFWBT','SBLTBL','SGBTBL','SGBWBT','SMKWBT','SMLTBL','TBLWBT','TGLAB1','TGLAB8','TGLFSV','TGLMBB','TGLMBP','TGLPBS','TGLTAB','TIYWBT','WARAB4','WARMBB','WARMBC','WARSPV','YKAWBT','ENGESV','GRCTIS','HBOWLC'],
-			enableBibleSelectorTabs: true,
 			aboutPagePath: 'about-mgabibliya.html',
-			settingsPrefix: '20170308',
-			enableBibleSelectorTabs: false,
-			textsIndexPath: 'dbs_texts.json',
-			baseContentUrl: 'https://inscript.bible.cloud/',
-			baseAPIUrl: 'https://api.bible.cloud/',
-			dbpBaseUrl: 'https://api.bible.cloud/bible/partners/fcbh/handshake/',
-			serverSearchPath: 'https://api.bible.cloud/bible/study/search/',
-			absUrl: 'https://api.bible.cloud/bible/partners/abs/',
-			enableOnlineSources: true,
-			enableFeedback: true,
-			feedbackUrl: 'https://bible.cloud/feedback/',
-			newCommentaryWindowTextId: "comm_eng_tske",
-			fcbhKey: '111a125057abd2f8931f6d6ad9f2921f',
-			jfmKey: '52b06248a3c6e8.12980089',
-			gaKey: 'UA-75606747-4',
-			gaUrl: 'mgabibliya.com',
-			enableAmericanBibleSociety: true,
-			eng2pEnableAll: false,
-			deafCentric: false,
-			enableDeafBibleWindow: false,
-			deafBibleWindowDefaultBibleVersion: 'ASESLV'
+            gaUrl: 'mgabibliya.com'
 		});
 	</script>
 	<style>
